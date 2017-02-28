@@ -29,6 +29,22 @@
             color: #001217;
             text-decoration:none;
         }
+        /*轮播图样式 from hhj*/
+        .num{
+            margin-left: 120px;
+        }
+        .num a{
+            color: white;
+            font-size: 34px;
+        }
+        .num li{
+            border-radius: 24px;
+            background: none;
+            margin: 0 -10px 0;
+        }
+        .num .on a{
+            color: orange;
+        }
     </style>
 </head>
 <body>
@@ -57,7 +73,17 @@
 <br>
 
 <div class="head1">
-    <span id="tou"><img src="./images/1.jpg" alt="" width='60px'; height='40px'/></span><span id='tou2'><a href="mine_index">我的</a>&nbsp;&nbsp;&nbsp;<a href="quality">推荐</a>&nbsp;&nbsp;&nbsp;<a href="article">发现</a> </span>
+    <span id="tou"><img src="./images/1.jpg" alt="" width='60px' height='40px'/></span>
+    <span id='tou2'>
+        <a href="mine_index">我的</a>&nbsp;&nbsp;&nbsp;
+        <a href="quality">推荐</a>&nbsp;&nbsp;&nbsp;
+        <a href="article">发现</a>
+    </span>
+    <span id="tou3" style="margin:10px 10px 0 0;">
+        <a href="type">
+            <img src="./images/hhj.jpg" alt="搜索" width='60px' height='60px' title="搜索"/>
+        </a>
+    </span>
 </div>
 <div class="head2">
     <a href"/">首页</a>&nbsp;&nbsp; <a href="quality">精选集</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="rank_index">排行榜</a>&nbsp;&nbsp;
@@ -72,10 +98,10 @@
     </ul>
     <!-- <div class="txt-bg"></div> -->
     <ul class="num">
-        <li class=" "><a>1</a><span></span></li>
-        <li class=" "><a>2</a><span></span></li>
-        <li class=" on"><a>3</a><span></span></li>
-        <li class=" "><a>4</a><span></span></li>
+        <li class=" "><a>●</a><span></span></li>
+        <li class=" "><a>●</a><span></span></li>
+        <li class=" on"><a>●</a><span></span></li>
+        <li class=" "><a>●</a><span></span></li>
     </ul>
 </div>
 <div class="category">
