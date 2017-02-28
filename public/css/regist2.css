@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#head{
+    width: 100%;
+    height: 120px;
+    background: #f75000;
+    line-height: 120px;
+    float: left;
+    margin-bottom: 1rem;
+}
+#head span{
+    font-size: 2.5rem;
+    color: white;
+}
+#return{
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+#ts{
+    padding-left: 2rem;
+    font-size: 2.2rem;
+}
+#capth{
+    margin-top: 1.5rem;
+    width: 61rem;
+    height: 6rem;
+    border: 1px solid #f75000;
+    font-size: 3rem;
+}
+#password{
+    margin-top: 1.5rem;
+    width: 61rem;
+    height: 6rem;
+    border: 1px solid #f75000;
+    font-size: 3rem;
+}
+#nick_name{
+    margin-top: 1.5rem;
+    width: 61rem;
+    height: 6rem;
+    border: 1px solid #f75000;
+    font-size: 3rem;
+}
+#sbt{
+    margin-top: 2rem;
+    display: block;
+    width: 55rem;
+    height: 5rem;
+    background: #f75000;
+    font-size: 2rem;
+    color: white;
+    border:none;
+    margin-left: 3rem;
+}

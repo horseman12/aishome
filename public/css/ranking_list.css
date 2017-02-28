@@ -1,0 +1,64 @@
+.head1{
+	    line-height:7rem;
+	    text-align: center;
+	    background-color: #f75000;
+	    font-size: 2rem;
+	    width: auto;
+	    height: 6rem;
+	    color: #f0f9fe;
+	}
+	.head2{
+	    text-align: center;
+	    line-height: 4rem;
+	    font-size: 1.5rem;
+	    height: 4rem;
+	    width: auto;
+	}
+	.top,.middle,.buttom{
+		margin: 2rem;
+		font-size: 1.5rem;
+	}
+	.top{
+		
+	    /*background-color: red;*/
+	    height: 41rem;
+	}
+	.top1{
+		/*background-color: yellow;*/
+		height: 10rem;
+		margin: 1rem;
+	}
+	hr{
+		margin: 1rem;
+	}
+	
+
+	.middle{
+	    /*background-colo: ;r:green;*/
+	    height: 53rem;
+	}
+	.buttom{
+	    /*background-color: blue;*/
+	    height: 89rem;
+	   
+	}
+	h2{
+		padding-top:1rem;
+	}
+	ul li{
+		list-style: none;
+	}
+	ul,img{
+		float: left;
+	}
+	img{
+		padding:0.5rem;
+	}
+	ul li{
+		line-height:2rem;
+		color :#929292;
+	}
+	.imgs{
+		margin: 4rem;
+		margin-left: 17rem;
+	}

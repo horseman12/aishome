@@ -1,0 +1,269 @@
+
+html,body
+{
+    background-color: #f0f9fe;
+    marign:0;
+    padding: 0;
+}
+
+.head1{
+    line-height:7rem;
+    text-align: center;
+    background-color: #f75000;
+    font-size: 2rem;
+    width: 100%;
+    height: 6rem;
+    color: #f0f9fe;
+}
+.head1 span{
+    float: right;
+}
+#tou
+{
+float: left;
+margin-left: 10px;
+}
+#tou2 {
+
+    float: left;
+    margin-left: 300px;
+}
+.focusBox{
+    float: left;
+    padding-left: 80px;
+}
+.category{
+      float: left; 
+}
+.pic{
+    float: left;
+    width: 800px;
+}
+.pic img{
+    width: 800px;
+    height: 400px;
+}
+.pic li{
+    list-style: none;
+}
+.num{
+    position: absolute;
+    padding-left: 530px;
+    padding-top: 350px;
+}
+.num li{
+    float:left;
+    list-style: none;
+    font-size: 30px;
+    background: #DDDDDD;
+    margin-left: 15px;
+    width: 50px;
+    text-align: center;
+}
+.head2{
+    float: left;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2.3rem;
+    color: #000000;
+    height: 4rem;
+    width: 100%;
+}
+.category{
+    height: 10rem;
+    float: left;
+    margin-left: 100px;
+}
+ 
+.category ul{
+    float: left;
+    list-style: none;
+}
+.category ul li{
+    margin-right:100px;
+    margin-top: 1rem;
+    font-size: 30px;
+}
+.category img{
+    height: 100px;
+    width: 100px;
+}
+
+.tuijian{
+   float: left;
+   margin-top: 40px;
+   margin-left: 100px;
+}
+
+.tuijian p{
+    float: left;
+    font-size: 40px;
+    height: 4rem;
+}
+.tuijian div{
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin-right: 130px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#more{
+    float: right;
+    margin-left: 550px;
+    font-size: 30px;
+}
+
+.newsong{
+   float: left;
+   margin-top: 40px;
+   margin-left: 100px;
+}
+
+.newsong p{
+    float: left;
+    font-size: 40px;
+    height: 4rem;
+}
+#newmore{
+    float: right;
+    margin-left: 550px;
+    font-size: 30px;
+}
+.newsong div{
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin-right: 130px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+/*.yuansong{*/
+    /*width: auto;*/
+    /*height: 30rem;*/
+    /*background-color: #FFFFFF;*/
+   /*clear: both;*/
+/*}*/
+/*.yuansong p{*/
+    /*font-size: 2rem;*/
+    /*margin-left:3rem;*/
+/*}*/
+/*#yuanmore{*/
+    /*float: right;*/
+    /*margin-left: 30rem;*/
+    /*font-size: 1.5rem;*/
+/*}*/
+/*.left{*/
+    /*width: 30rem;*/
+    /*height:20rem;*/
+    /*float: left;*/
+/*}*/
+/*.left dl dd h2{*/
+    /*font-size:20px;*/
+/*}*/
+/*.left dl dt{*/
+    /*float: left;*/
+/*}*/
+/*.left dl dt img{*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+/*}*/
+/*.left dl dd{*/
+    /*width:280px;*/
+   /*height: 100px;*/
+    /*float: left;*/
+    /*background:blue;*/
+
+/*}*/
+/*.right{*/
+    /*width: 150px;*/
+    /*height: 100px;*/
+    /*background: red;*/
+    /*float: right;*/
+/*}*/
+/*.right span{*/
+    /*font-size: 50px;*/
+    /*margin-right: 50px;*/
+/*}*/
+.aplayer{
+    width: 100%;
+    background-color: #f02c71;
+}
+.zhuanti {
+    float: left;
+    margin-left: 100px;
+}
+.zhuanti p{
+    margin-top: 2rem;
+    float: left;
+    font-size: 40px;
+
+}
+.zhuanti p span{
+    float: right;
+    font-size: 1.5rem;
+    margin-left:40rem;
+}
+.zhuanti1 img{
+    margin-top: 2rem;
+     width: 100%;
+     height: 15rem;
+    background-color: #FFFF00;
+    clear: both;
+ }
+#member {
+   background: #666666;
+   width: 800px;
+   height: 1200px;
+   position: absolute;
+   z-index: 100;
+   display: none;
+}
+#memberHeader{
+    width: 800px;
+    height: 300px;
+    background: #666666;
+}
+
+#memimg{
+    width:130px;
+    height:130px;
+    border-radius:100px;
+    background-size: cover;
+    margin-left: 350px;
+    margin-bottom: 20px;
+}
+#memname{
+    margin-left: 350px;
+    font-size: 35px;
+}
+#memyl{
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+#memyl li{
+    float: left;
+    font-size: 35px;
+    color: #ffffff;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+#memlist{
+    float: left;
+    background-color: #ffffff;
+    width: 800px;
+    height: 850px;
+}
+#memlist li {
+    list-style: none;
+    line-height: 100px;
+    font-size: 40px;
+    color: #000000;
+    margin-left: 20px;
+    
+}

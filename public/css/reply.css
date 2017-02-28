@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.box1{
+     width: 100%;
+     height: 10rem;
+    background-color: #f75000;
+    text-align: center;
+ }
+.box1 span{
+    line-height: 10rem;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+.box2{
+    width: 100%;
+    height: 6rem;
+    background-color: #00aecd;
+    font-size: 28px;
+    text-align: center;
+    line-height: 6rem;
+    color: #f02c71;
+}
+.box3{
+    width: 100%;
+    height: 10rem;
+    /*background-color: #002a80;*/
+    margin-top: 2rem;
+}
+.box4{
+    width: 100%;
+    height: 4rem;
+    /*background-color: #f02c71;*/
+}
+.box4 ul li{
+     list-style: none;
+     float: left;
+     margin-left: 3rem;
+     font-size: 36px;
+ }
+.box5{
+    width: 100%;
+    height: 5rem;
+  background-color: #fff1e7;
+    margin-top: 1.5rem;
+    font-size: 32px;
+}
+.box6{
+    width: 100%;
+    height: auto;
+    background-color: #00aecd;
+}

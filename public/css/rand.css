@@ -1,0 +1,246 @@
+body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4{
+    font-weight:normal;
+}
+* {
+    box-sizing: border-box;
+}
+table{
+    border-collapse:collapse;
+}
+body {
+    font-family: "Microsoft YaHei";
+    z-index:100;
+    _position: relative ;
+    _top:0px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+}
+
+input, textarea {
+    outline: none;
+    box-shadow: none;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.tl {
+    text-align: left;
+}
+
+.tc {
+    text-align: center
+}
+
+.tr {
+    text-align: right;
+}
+
+.ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.head
+{
+    width: 100%;
+    height: 116px;
+    overflow: visible;
+    position: fixed;
+    top: 0px; /* position fixed for IE6 */
+    /*_position: absolute;*/
+    _top: expression(documentElement.scrollTop + "px");
+
+}
+
+.head a{
+    font-size: 60px;
+    color: #ffffff;
+    margin-left: 30px;
+    margin-top: 60px;
+    line-height: 116px;
+}
+.head span{
+    margin-left: 280px;
+    font-size: 35px;
+    color: #ffffff;
+    line-height: 116px;
+
+}
+.head1{
+    width: 100%;
+    height: 274px;
+    margin-top: 117px;
+}
+.head1 dl
+{
+    width: 700px;
+    height: 230px;
+}
+.head1 dl dt{
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.head1 dl dd{
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 27px;
+    float: left;
+    width: 340px;
+    height: 30px;
+    color: #ffffff;
+}
+.head2 .play
+{
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+    width: 100%;
+    height: 118px;
+}
+
+.head2 .play img{
+    margin-top: 25px;
+    margin-left: 30px;
+    float: left;
+}
+
+#song{
+    float: left;
+    font-size: 27px;
+    margin-left: 30px;
+    height: 118px;
+    line-height: 118px;
+}
+.play1
+{
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+    width: 100%;
+    height: 118px;
+}
+.play1 dl{
+    float: left;
+    width:400px ;
+    height: 114px;
+}
+.play1 .photo
+{
+    width: 88px;
+    height: 88px;
+    margin-top: 15px;
+
+}
+.play1 dt{
+    width: 88px;
+    height: 88px;
+    float: left;
+    text-align: center;
+    margin-left: 50px;
+}
+.play1 .caozuo{
+float: left;
+    margin-left: 250px;
+    margin-top: 30px;
+
+}
+.play1 dd
+{
+    float: left;
+    color: grey;
+     width:230px;
+    font-size: 25px;
+    margin-left: 20px;
+}
+.play1 .songname{
+    margin-top: 25px;
+    color: #000000;
+}
+#test {
+    width:100%;
+    height:100%;
+    background-color:#000;
+   position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    opacity:0.1;
+    /*兼容IE8及以下版本浏览器*/
+    filter: alpha(opacity=30);
+    display:none;
+}
+.head3{
+    width: 100%;
+    height: 620px;
+    background-color:#f1f5f6 ;
+    overflow: visible;
+    position:absolute;
+    z-index:3;
+    bottom: 0px; /* position fixed for IE6 */
+    display: none;
+    _top: expression(documentElement.scrollTop + "px");
+}
+.head3 .footer1{
+    width: 100%;
+    height: 450px;
+}
+.head3 dl{
+    float: left;
+    width: 182px;
+    height: 220px;margin-left: 18px;
+}
+.head3 dl dd{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.head3 img{
+    margin-top: 20px;
+    margin-left: 28px;
+    width: 124px;
+    height: 124px;
+}
+.head3 .footer{
+    border: 1px solid grey;
+    width: 100%;
+    height: 124px;
+    font-size: 30px;
+    text-align: center;
+    color: grey;
+    line-height: 124px;
+}
+
