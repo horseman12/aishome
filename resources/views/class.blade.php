@@ -28,7 +28,7 @@
 
    {{--</div>--}}
 {{--</div>--}}
-<input style="background-color: white; width: 900px;height: 100px;margin-left: 30px;margin-top: 50px;font-size: 30px" type="button" value="全部">
+<a href="omnibus"><input style="background-color: white; width: 900px;height: 100px;margin-left: 30px;margin-top: 50px;font-size: 30px" type="button" value="全部"></a>
 <div class="head4" style="margin-top: 50px">
     <div class="box2">
         <img width="80px" height="120px" src="./lable/1.png" alt="图片加载错误了....">
