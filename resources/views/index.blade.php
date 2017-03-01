@@ -29,6 +29,22 @@
             color: #001217;
             text-decoration:none;
         }
+        /*轮播图样式 from hhj*/
+        .num{
+            margin-left: 120px;
+        }
+        .num a{
+            color: white;
+            font-size: 34px;
+        }
+        .num li{
+            border-radius: 24px;
+            background: none;
+            margin: 0 -10px 0;
+        }
+        .num .on a{
+            color: orange;
+        }
     </style>
 </head>
 <body>
@@ -57,11 +73,61 @@
 <br>
 
 <div class="head1">
-    <span id="tou"><img src="./images/1.jpg" alt="" width='60px'; height='40px'/></span><span id='tou2'><a href="mine_index">我的</a>&nbsp;&nbsp;&nbsp;<a href="quality">推荐</a>&nbsp;&nbsp;&nbsp;<a href="article">发现</a> </span>
+    <span id="tou"><img src="./images/1.jpg" alt="" width='60px' height='40px'/></span>
+    <span id='tou2'>
+        <a href="mine_index">我的</a>&nbsp;&nbsp;&nbsp;
+        <a href="quality">推荐</a>&nbsp;&nbsp;&nbsp;
+        <a href="article">发现</a>
+    </span>
+    <span id="tou3" style="margin:10px 10px 0 0;float:right;">
+        <a href="search">
+            <img src="./images/hhj.jpg" alt="搜索" width='60px' height='60px' title="搜索"/>
+        </a>
+    </span>
 </div>
+<div id='member'>
+    <div style='height:60px;background:#666666'></div>
+    <div id='memberHeader'>
+        @if($userInfo == '')
+            <div id="memimg" style="background-image: url('./images/logo.png')">
+            </div>
+            <span id='memname' style='color:#000000'><a href="login" style='color:#000000'>登录</a> / <a href="regist" style='color:#000000'>注册</a></span>
+        @else
+            <div id="memimg" style="background-image:url({{ $userInfo['img'] or './images/logo.png' }})">
+            </div>
+            <span id='memname' style='color:#000000'>{{ $userInfo['nickname'] }}</span>
+        @endif
+        <hr>
+        @if($userInfo != '')
+            <ul id='memyl'>
+                <li>
+                    累计播放 0
+                </li>
+                <li>
+                    关注  0
+                </li>
+                <li>
+                    粉丝  0
+                </li>
+            </ul>
+        @endif
+    </div>
+    @if($userInfo != '')
+        <div id='memlist'>
+            <ul>
+                <li><a href="javascript:void(0)" id="qiandao">签到</a></li>
+                <li><a href="member">会员中心</a></li>
+                <li><a href="mine_favorite">我收藏的</a></li>
+                <li><a href="memberindex">个人设置</a></li>
+                <li><a href="loginout">退出</a></li>
+            </ul>
+        </div>
+    @endif
+</div>
+
 <div class="head2">
     <a href"/">首页</a>&nbsp;&nbsp; <a href="quality">精选集</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="rank_index">排行榜</a>&nbsp;&nbsp;
-    <a href="ac_index">艺人</a>&nbsp;&nbsp;<a href="javascript:void(0)">mv</a>
+    <a href="ac_index">艺人</a>&nbsp;&nbsp;<a href="javascript:void(0)">mv</a>&nbsp;&nbsp;<a href="javascript:void(0)">分类</a>
 </div>
 
 <div class="focusBox">
@@ -72,10 +138,10 @@
     </ul>
     <!-- <div class="txt-bg"></div> -->
     <ul class="num">
-        <li class=" "><a>1</a><span></span></li>
-        <li class=" "><a>2</a><span></span></li>
-        <li class=" on"><a>3</a><span></span></li>
-        <li class=" "><a>4</a><span></span></li>
+        <li class=" "><a>●</a><span></span></li>
+        <li class=" "><a>●</a><span></span></li>
+        <li class=" on"><a>●</a><span></span></li>
+        <li class=" "><a>●</a><span></span></li>
     </ul>
 </div>
 <div class="category">
@@ -126,46 +192,6 @@
     <div class="zhuanti1">
        <a href="article"> <img src="./images/2.jpg" alt=""/></a>
     </div>
-</div>
-
-<div id='member'>
-    <div style='height:60px;background:#666666'></div>
-    <div id='memberHeader'>
-        @if($userInfo == '')
-            <div id="memimg" style="background-image: url('./images/logo.png')">
-            </div>
-            <span id='memname' style='color:#000000'><a href="login" style='color:#000000'>登录</a> / <a href="regist" style='color:#000000'>注册</a></span>
-        @else
-            <div id="memimg" style="background-image:url({{ $userInfo['img'] or './images/logo.png' }})">
-            </div>
-            <span id='memname' style='color:#000000'>{{ $userInfo['nickname'] }}</span>
-        @endif
-        <hr>
-        @if($userInfo != '')
-            <ul id='memyl'>
-                <li>
-                    累计播放 0
-                </li>
-                <li>
-                    关注  0
-                </li>
-                <li>
-                    粉丝  0
-                </li>
-            </ul>
-        @endif
-    </div>
-    @if($userInfo != '')
-        <div id='memlist'>
-            <ul>
-                <li><a href="javascript:void(0)" id="qiandao">签到</a></li>
-                <li><a href="member">会员中心</a></li>
-                <li><a href="mine_favorite">我收藏的</a></li>
-                <li><a href="memberindex">个人设置</a></li>
-                <li><a href="loginout">退出</a></li>
-            </ul>
-        </div>
-    @endif
 </div>
 
 <script type="text/javascript">

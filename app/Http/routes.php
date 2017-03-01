@@ -126,3 +126,8 @@ Route::any('/reply&{id}','CommentController@reply');
 Route::group(['middleware' => ['web']], function () {
     //
 });
+
+//搜索页面 hhj
+Route::any('/search','SearchController@index');
+//执行搜索 hhj
+Route::any('/dosearch','SearchController@search');
