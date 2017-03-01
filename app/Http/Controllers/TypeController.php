@@ -24,7 +24,19 @@ class TypeController extends Controller
         $type= DB::table('type')
             ->select("*")
             ->get();
-        return view('class',array('type'=>$type));
+        $type = json_decode(json_encode($type),true);
+        foreach($type as $k=>$v){
+            if($v['parent_id']==0){
+                $arr[$k] = $v;
+                foreach($type as $kk=>$vv){
+                    if($vv['parent_id']==$v['type_id']){
+                        $arr[$k]['son'][]=$vv;
+                    }
+                }
+            }
+        }
+        sort($arr);
+        return view('class',array('type'=>$arr));
     }
 
     /**
