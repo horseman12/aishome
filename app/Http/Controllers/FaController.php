@@ -19,10 +19,11 @@ class FaController extends Controller
 
         return view('wen',['data'=>$one]);
     }
-    public function wen(){
-        $id=$_GET['id'];
-        $data=DB::select("select * from ais_article where art_id= '$id'");
-        return view('wenzhang',['data'=>$data]);
+    public function wen()
+    {
+        $id = $_GET['id'];
+        $data = DB::select("select * from ais_article where art_id= '$id'");
+        return view('wenzhang', ['data' => $data]);
     }
 }
 ?>
