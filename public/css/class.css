@@ -118,7 +118,7 @@ body a:hover {
     float: left;
     width: 231px;height: 78px;
     border: 1px solid #ccc4c3;
-
+    border-collapse: collapse;
     color: #ff8c3a;
     font-size: 24px;
     text-align: center;
@@ -130,7 +130,7 @@ body a:hover {
 }
 .head4{
     width: 905px;
-    height:216px;
+    height:230px;
     margin: 30px auto;
     text-align:center;
 }
@@ -138,9 +138,9 @@ body a:hover {
 .head5{
 
     width: 905px;
-    height:216px;
+    height:320px;
 
-    margin: 30px 30px 130px 30px;
+    margin: 70px 30px 130px 30px;
     text-align:center;
 }
 .head5 .box3{
@@ -148,7 +148,7 @@ body a:hover {
     background: #ffffff;
     float: left;
     width: 200px;
-    height:318px;
+    height:398px;
 }
 .head5 img{
 
@@ -180,7 +180,7 @@ body a:hover {
     background: #ffffff;
     float: left;
     width: 200px;
-    height:318px;
+    height:398px;
 }
 .head6 img{
 
@@ -222,17 +222,21 @@ body a:hover {
     float: left;
     margin-top: 10px;
 }
+
 .likes{
     width: 905px;
     margin-left: 34px;
     margin-bottom: 40px;
 }
+
 #reash{
     background: #edeff1 ;
 }
+
 #reash:hover{
     background-color: #ccc4c3;
 }
+
 .likes a{
     background: #ffffff ;
     float: left;

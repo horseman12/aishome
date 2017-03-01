@@ -15,90 +15,70 @@
 <div class="head2">
     全部
 </div>
-<div class="head3">
-    <div class="box">
-        <img src="./images/IMG_0580_07.jpg" alt="">
-    </div>
-   <div class="box1">
-       <a href="" class="hot">国语</a>
-       <a href=""></a>
-       <a href=""></a>
-       <a href=""></a>
-       <a href=""></a>
+{{--<div class="head3">--}}
+    {{--<div class="box">--}}
+        {{--<img width="80px" height="120px" src="./lable/1.png" alt="">--}}
+    {{--</div>--}}
+   {{--<div class="box1">--}}
+       {{--<a href="" class="hot">国语</a>--}}
+       {{--<a href=""></a>--}}
+       {{--<a href=""></a>--}}
+       {{--<a href=""></a>--}}
+       {{--<a href=""></a>--}}
 
-   </div>
-</div>
-<div class="head4">
+   {{--</div>--}}
+{{--</div>--}}
+<input style="background-color: white;border: 1px solid white; width: 900px;height: 100px;margin-left: 30px;margin-top: 50px;font-size: 30px" type="button" value="全部">
+<div class="head4" style="margin-top: 50px">
     <div class="box2">
-        <img src="./images/IMG_0580_07.jpg" alt="">
+        <img width="80px" height="120px" src="./lable/1.png" alt="图片加载错误了....">
     </div>
     <div class="box1">
-        <a >国语</a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
+        @foreach($type as $k=>$v)
+            @if($v->parent_id==1)
+                <a href="{{url('omnibus')}}?type_id={{$v->type_id}}">{{ $v->type_name }}</a>
+            @endif
+        @endforeach
     </div>
 </div>
+
 <div class="head5">
     <div class="box3">
-        <img src="./images/IMG_0580_10.jpg" alt="">
+        <img  width="80px" style="margin-left: 60px" height="120px" src="./lable/2.png" alt="图片加载错误了.....">
     </div>
     <div class="box1">
-        <a >国语</a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
+        @foreach($type as $k=>$v)
+            @if($v->parent_id==26)
+                <a href="{{url('omnibus')}}?type_id={{$v->type_id}}">{{ $v->type_name }}</a>
+            @endif
+        @endforeach
     </div>
 </div>
 <div class="head6">
     <div class="box3">
-        <img src="./images/IMG_0580_10.jpg" alt="">
+        <img style="margin-left: 60px" width="80px" height="120px" src="./lable/3.png" alt="图片加载不正确了....">
     </div>
     <div class="box1">
-        <a >国语</a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
-        <a></a>
+        @foreach($type as $k=>$v)
+            @if($v->parent_id==11)
+                <a href="{{url('omnibus')}}?type_id={{$v->type_id}}">{{ $v->type_name }}</a>
+            @endif
+        @endforeach
     </div>
 </div>
-<div class="hrss">
-<div class="hrs"></div><span class="hrs1">想要更多？</span><div class="hrs2"></div>
-</div>
-<div class="likes">
-    <a >国语</a>
-    <a></a>
-    <a></a>
-    <a></a>
-    <a></a>
-    <a></a>
-    <a></a>
-    <a></a>
-    <a></a>
-    <a></a>
-    <a></a>
-    <a id="reash">换一换</a>
-</div>
+{{--<div class="hrss">--}}
+{{--<div class="hrs"></div><span class="hrs1">想要更多？</span><div class="hrs2"></div>--}}
+{{--</div>--}}
+{{--<div class="likes">--}}
+    {{--<a></a>--}}
+    {{--<a></a>--}}
+    {{--<a></a>--}}
+    {{--<a></a>--}}
+    {{--<a></a>--}}
+    {{--<a></a>--}}
+    {{--<a></a>--}}
+    {{--<a id="reash">换一换</a>--}}
+{{--</div>--}}
 <!-- 音乐播放器 -->
 <div id="player1" class="aplayer"></div>
 <script src="APlayer.min.js">

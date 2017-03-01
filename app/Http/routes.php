@@ -64,10 +64,19 @@ Route::any('/actor','YirenController@actor');
 //收藏歌手
 Route::any('/actor_post','YirenController@actor_post');
 
+
 Route::any('wen','FaController@index');
 Route::any('wenzhang','FaController@wen');
 Route::any('/article','FaController@index');
 Route::any('/wen','FaController@wen');
+
+//shh开发音乐分类
+Route::any('/type','TypeController@index');
+Route::any('/omnibus',"TypeController@omnibus");
+Route::any("/music","TypeController@music");
+
+
+
 //文章最新
 Route::any('/new_article','IndexController@new_article');
 /*
