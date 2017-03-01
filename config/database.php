@@ -54,7 +54,7 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => 'localhost',
+            'host'      => '101.200.59.219',
             'database'  => 'ais_music',
             'username'  => 'root',
             'password'  => 'root',

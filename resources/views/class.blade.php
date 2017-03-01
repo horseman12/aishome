@@ -28,16 +28,14 @@
 
    {{--</div>--}}
 {{--</div>--}}
-<input style="background-color: white;border: 1px solid white; width: 900px;height: 100px;margin-left: 30px;margin-top: 50px;font-size: 30px" type="button" value="全部">
+<input style="background-color: white; width: 900px;height: 100px;margin-left: 30px;margin-top: 50px;font-size: 30px" type="button" value="全部">
 <div class="head4" style="margin-top: 50px">
     <div class="box2">
         <img width="80px" height="120px" src="./lable/1.png" alt="图片加载错误了....">
     </div>
     <div class="box1">
-        @foreach($type as $k=>$v)
-            @if($v->parent_id==1)
-                <a href="{{url('omnibus')}}?type_id={{$v->type_id}}">{{ $v->type_name }}</a>
-            @endif
+        @foreach($type[0]['son'] as $k=>$v)
+            <a href="omnibus?type_id=<?php echo $v['type_id']?>"><?=$v['type_name']?></a>
         @endforeach
     </div>
 </div>
@@ -47,10 +45,8 @@
         <img  width="80px" style="margin-left: 60px" height="120px" src="./lable/2.png" alt="图片加载错误了.....">
     </div>
     <div class="box1">
-        @foreach($type as $k=>$v)
-            @if($v->parent_id==26)
-                <a href="{{url('omnibus')}}?type_id={{$v->type_id}}">{{ $v->type_name }}</a>
-            @endif
+        @foreach($type[1]['son'] as $k=>$v)
+            <a href="omnibus?type_id=<?php echo $v['type_id']?>"><?=$v['type_name']?></a>
         @endforeach
     </div>
 </div>
@@ -59,10 +55,8 @@
         <img style="margin-left: 60px" width="80px" height="120px" src="./lable/3.png" alt="图片加载不正确了....">
     </div>
     <div class="box1">
-        @foreach($type as $k=>$v)
-            @if($v->parent_id==11)
-                <a href="{{url('omnibus')}}?type_id={{$v->type_id}}">{{ $v->type_name }}</a>
-            @endif
+        @foreach($type[2]['son'] as $k=>$v)
+            <a href="omnibus?type_id=<?php echo $v['type_id']?>"><?=$v['type_name']?></a>
         @endforeach
     </div>
 </div>
