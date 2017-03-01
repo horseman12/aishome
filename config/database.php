@@ -54,10 +54,10 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => 'localhost',
+            'host'      => '101.200.59.219',
             'database'  => 'ais_music',
-            'username'  => 'root',
-            'password'  => 'root',
+            'username'  => 'hhj',
+            'password'  => '123456',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => 'ais_',
