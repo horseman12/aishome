@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
+    <title>爱尚music 快讯</title>
     <link href="css/quality.css" rel="stylesheet">
     <style>
 	   .head1 a{
@@ -22,9 +22,8 @@
     </style>
 </head>
 <body>
-<div class="head1">
-     <span id="tou"><img src="./images/1.jpg" alt=""/></span><a href="/">我的</a>&nbsp;&nbsp;&nbsp;<a href="quality"> 推荐</a>&nbsp;&nbsp;&nbsp;<a href="article">发现</a>
-</div>
+@include('public.head')
+
 <div class="jingxuan">
     <div>
         <?php

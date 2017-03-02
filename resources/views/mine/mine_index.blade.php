@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>爱尚music 个人中心</title>
 	<link href="./css/personal.css" rel="stylesheet">
 	<link rel="stylesheet" href="http://cdn.bootcss.com/aplayer/1.4.6/APlayer.min.css"> 
 	<style>
@@ -20,7 +20,7 @@
 	<div class="all">
 		<div class="head1">
 		    <span id="tou"><!-- <img src="./images/1.jpg" alt=""/> --></span>
-			 <a href="index">我的</a>&nbsp;&nbsp;&nbsp;<a href="quality">推荐</a>&nbsp;&nbsp;&nbsp;<a href="article">发现</a>
+			 <a href="index">我的</a>&nbsp;&nbsp;&nbsp;<a href="index">推荐</a>&nbsp;&nbsp;&nbsp;<a href="article">发现</a>
 		</div>
 		<div class="one">
 			<a href=""><img src="./images/my3.jpg" class="Oimg1"></a>

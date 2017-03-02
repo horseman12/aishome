@@ -200,6 +200,14 @@
         $("#search_result").fadeOut();
     })
 
+    //替换搜索按钮 为 返回按钮
+    $(function(){
+        $("#tou3").html('X').css({'margin-right':'20px'}).click(function(){
+            history.back(-1);
+        });
+        $("#tou2").css({'margin-left':'30%'});
+    })
+
 </script>
 </body>
 </html>

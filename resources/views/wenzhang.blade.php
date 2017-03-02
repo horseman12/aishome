@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
+    <title>爱尚music 快讯详情</title>
     <link href="css/quality.css" rel="stylesheet">
     <style>
         #tu{

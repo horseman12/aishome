@@ -5,14 +5,14 @@
 <script type="text/javascript" src="http://down.hovertree.com/jquery/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="http://hovertree.com/texiao/jqimg/4/js/jquery.SuperSlide.js"></script>
 
-<div class="head1">
-    <span id="tou"><img src="./images/1.jpg" alt="" width='60px' height='40px'/></span>
-    <span id='tou2'>
-        <a href="mine_index">我的</a>&nbsp;&nbsp;&nbsp;
-        <a href="index">推荐</a>&nbsp;&nbsp;&nbsp;
-        <a href="article">发现</a>
+<div class="head1" style="height: 90px;font-size: 34px;">
+    <span id="tou" style="margin-top: 4px;"><img src="./images/1.png" alt="" width='60px' height='60px'/></span>
+    <span id='tou2' style="margin-left: 20%;">
+        <a href="mine_index" style="color:white">我的</a>&nbsp;&nbsp;&nbsp;
+        <a href="index" style="color:white">推荐</a>&nbsp;&nbsp;&nbsp;
+        <a href="article" style="color:white">发现</a>
     </span>
-    <span id="tou3" style="margin:0px 10px 0 0;float:right;">
+    <span id="tou3" style="margin:10px 10px 0 0;float:right;">
         <a href="search">
             <img src="./images/hhj.jpg" alt="搜索" width='60px' height='60px' title="搜索"/>
         </a>
@@ -22,6 +22,7 @@
     <div style='height:60px;background:#666666'></div>
     <div id='memberHeader'>
         <?php
+            session_start();
             $userInfo = isset($_SESSION['userInfo']) ? $_SESSION['userInfo'] : '';
         ?>
         @if($userInfo == '')

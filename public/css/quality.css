@@ -4,27 +4,7 @@ html,body
     marign:0;
     padding: 0;
 }
-.head1{
-    line-height:7rem;
-    text-align: center;
-    background-color: #f75000;
-    font-size: 2rem;
-    width: 100%;
-    height: 6rem;
-    color: #f0f9fe;
-}
-#tou
-{
-    float: left;
-}
-.head2{
-    text-align: center;
-    line-height: 4rem;
-    font-size: 1.8rem;
-    color: #000000;
-    height: 4rem;
-    width: 100%;
-}
+
 .head3 ul li{
     list-style: none;
     float: left;
