@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="head1">
-    <img src="./images/IMG_0580_03.jpg" alt=""><span>选择分类</span>
+    <a onclick="history.back(-1)" ><img src="./images/IMG_0580_03.jpg" alt=""><span>选择分类</span></a>
 </div>
 <div class="head2">
     全部
