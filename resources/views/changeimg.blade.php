@@ -11,7 +11,7 @@
 <body>
 
 <div id="header">
-    <a href="/memberindex" id="return">←</a>
+    <a onclick="history.back(-1)" id="return">←</a>
     <span>修改头像</span>
 </div>
 <div class="con4">

@@ -272,4 +272,62 @@ class MemberController extends Controller
         $html = "https://mapi.alipay.com/gateway.do?".$str.'&sign='.$parameter['sign'].'&sign_type='.$parameter['sign_type'];
         return  $html;
     }
+
+    /**
+     * 修改个人信息
+     *      lml
+     */
+    public function lala()
+    {
+        session_start();
+        $id=$_SESSION['userInfo'];
+        $user_id = $id['user_id'];
+        $sex = Input::get("sex");
+        $year = Input::get("year");
+        $month = Input::get("month");
+        $day = Input::get("day");
+        if($sex!=""){
+            $sql = "update `ais_user` set sex='$sex' where user_id='$user_id'";
+            $res = DB::select($sql);
+            if($res) {
+                echo 1;
+            }
+        }
+        if($year!=""){
+            $sql = "update `ais_user` set year='$year' where user_id='$user_id'";
+            $arr = DB::select($sql);
+            if($arr) {
+                echo 1;
+            }
+        }
+        if($month!=""){
+            $sql = "update `ais_user` set month='$month' where user_id='$user_id'";
+            $re = DB::select($sql);
+            if($re) {
+                echo 1;
+            }
+        }
+        if($day!=""){
+            $sql = "update `ais_user` set day='$day' where user_id='$user_id'";
+            $a = DB::select($sql);
+            if($a) {
+                echo 1;
+            }
+        }
+
+
+    }
+    public function update_name()
+    {
+        $user_name = Input::get("nickname");
+        $user_id = Input::get("user_id");
+        $sql = "update `ais_user` set nickname='$user_name' where user_id='$user_id'";
+        $res = DB::select($sql);
+        if($res){
+            echo 1;
+        }else{
+            echo 0;
+        }
+    }
+
 }

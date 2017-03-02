@@ -33,6 +33,11 @@ Route::any('member','MemberController@member');
 Route::any('open_member','MemberController@open_member');
 Route::any('memberindex','MemberController@memberindex');
 Route::any('changeimg','MemberController@changeimg');
+
+//修改个人信息 lml
+Route::any('lala','MemberController@lala');
+Route::any('update_name','MemberController@update_name');
+
 //支付宝回调地址
 Route::any('/paycomplted','MemberController@paycomplted');
 //播放器
