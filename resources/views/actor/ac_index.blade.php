@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
+    <title>爱尚music 艺人</title>
     <link rel="stylesheet" type="text/css" href="css/mdialog.css">
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/mdialog.js"></script >
@@ -48,13 +48,9 @@
 </div>
 <br>
 
-<div class="head1">
-    <span id="tou"><img src="./images/1.jpg" alt="" width='60px'; height='40px'/></span><span id='tou2'><a href="mine_index">我的</a>&nbsp;&nbsp;&nbsp;推荐&nbsp;&nbsp;&nbsp;<a href="article">发现</a> </span>
-</div>
-<div class="head2">
-    <a href"/">首页</a>&nbsp;&nbsp; <a href="quality">精选集</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="rank_index">排行榜</a>&nbsp;&nbsp;
-    <a href="{{URL('/ac_index')}}">艺人</a>&nbsp;&nbsp;<a href="javascript:void(0)">mv</a>
-</div>
+@include('public.head')
+
+@include('public.nav')
 
 <div class="focusBox">
 </div>

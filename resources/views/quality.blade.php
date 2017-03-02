@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
-   <link href="css/quality.css" rel="stylesheet">
+    <title>爱尚music 精选集</title>
+    <link href="css/quality.css" rel="stylesheet">
     <style>
            .head1 a{
             color:#f0f9fe;
@@ -16,13 +16,11 @@
     </style>
 </head>
 <body>
-<div class="head1">
-    <span id="tou"><img src="./images/headtu.jpg" alt=""/></span>
-		<a href="index">我的</a>&nbsp;&nbsp;&nbsp;<a href="quality">推荐</a>&nbsp;&nbsp;&nbsp;<a href="article">发现</a>
-</div>
-<div class="head2">
-     <a href="index">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="quality">精选集</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="rank_index">排行榜</a>&nbsp;&nbsp;&nbsp;&nbsp;电台&nbsp;&nbsp;mv
-</div>
+
+@include('public.head')
+
+@include("public.nav")
+
 <div class="head3">
     <ul>
         <li><a href="quality">推荐</a></li>

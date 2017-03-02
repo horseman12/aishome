@@ -12,18 +12,16 @@
             text-decoration:none;
         }
 	</style>
-	<title>排行榜</title>
+	<title>爱尚music 排行榜</title>
 	 <link href="./css/ranking_list.css" rel="stylesheet">
 	 <link rel="stylesheet" href="http://cdn.bootcss.com/aplayer/1.4.6/APlayer.min.css"> 
 </head>
 <body>
 		<!-- Header -->
-		<div class="head1">
-		    <span id="tou"><img src="./images/1.jpg" alt=""/></span><a href="/">我的</a>&nbsp;&nbsp;&nbsp;<a href="quality"> 推荐</a>&nbsp;&nbsp;&nbsp;<a href="article">发现</a>
-		</div>
-		<div class="head2">
-			<a href="index">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="quality">精选集</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="rank_index">排行榜</a>&nbsp;&nbsp;&nbsp;&nbsp;电台&nbsp;&nbsp;mv
-		</div>
+
+		@include('public.head')
+
+		@include('public.nav')
 
 		<!-- 爱尚官方榜 -->
 		<div class="top">
